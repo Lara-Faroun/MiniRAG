@@ -19,3 +19,7 @@ This is a minimal implementation of the RAG moddel for question answering.
 ``` bash
     conda activate mini-rag
 ```
+### (Optional)Setup your commandline for better readability:
+``` bash
+    export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
+```
