@@ -23,3 +23,14 @@ This is a minimal implementation of the RAG moddel for question answering.
 ``` bash
     export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
 ```
+## Installation
+
+### Install required packages:
+``` bash
+    pip install -r requirements.txt 
+```
+### Setup the environment varibles
+``` bash
+    cp .env.example .env
+```
+Set your evnironment varibles in the `.env` file. 
