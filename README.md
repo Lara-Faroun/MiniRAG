@@ -34,3 +34,8 @@ This is a minimal implementation of the RAG moddel for question answering.
     cp .env.example .env
 ```
 Set your evnironment varibles in the `.env` file. 
+
+## Run FastAPI server:
+``` bash
+    uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
