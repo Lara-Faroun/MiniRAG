@@ -44,15 +44,15 @@ class ChunkModel(BaseDataModel):
     
 
     async def insert_many(self, chunks:list , batch_size:int = 100):
-        
         for i in range(0,len(chunks),batch_size):
+
             batch = chunks[i:i+batch_size]
+            
             operations = [
                 InsertOne(chunk.dict(by_alias=True , exclude_unset=True))
                 for chunk in batch
             ]
             await self.collection.bulk_write(operations)
-
         return len (chunks)
     
     async def delete_chunks_by_project_id(self , project_id:ObjectId):

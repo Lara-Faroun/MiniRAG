@@ -8,3 +8,6 @@ class ResponseSignal(Enum):
     File_VALIDATED_SUCCESS = "file_validated_sucessfully"
     PROCESSING_FAILED = "processing_failed"
     PROCESSING_SUCCESS = "processing_success"
+    NO_FILES_ERROR = "not found files"
+    FILE_ID_ERROR = "no file with this id"
+    
