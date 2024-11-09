@@ -17,7 +17,7 @@ This is a minimal implementation of the RAG moddel for question answering.
 ```
 3) Activate the environment:
 ``` bash
-    conda activate mini-rag
+    conda activate mini-rag1
 ```
 ### (Optional)Setup your commandline for better readability:
 ``` bash
