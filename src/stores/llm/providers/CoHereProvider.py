@@ -86,7 +86,7 @@ class CoHereProvider(LLMInterface):
             self.logger.error("Error while embedding text with coHere")
             return None
         
-        return response
+        return response.embeddings.float[0]
 
     
     def construct_prompt(self , prompt:str , role: str):
