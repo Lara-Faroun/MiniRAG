@@ -7,7 +7,7 @@ class LLMEnums(Enum):
 class OpenAIEnums(Enum):
     SYSTEM = "system"
     UESR = "user"
-    ASSISTANT = "asssistant"
+    ASSISTANT = "assistant"
 
 class CoHereEnums(Enum):
     SYSTEM = "SYSTEM"
