@@ -58,12 +58,12 @@ class OpenAIProvider(LLMInterface):
             max_tokens = max_output_tokens,
             temperature = temperature
         )
-        
-        if not response or not response.choices or len(response.choices==0) or not response.choices[0].message:
+
+        if not response or not response.choices or len(response.choices)==0 or not response.choices[0].message:
             self.logger.error("Error while generation text with  OpenAI")
             return None
         
-        response.choices[0].message.content
+        return response.choices[0].message.content
 
     def embed_text(self, text:str , documment_type: str = None):
         if not self.client:
